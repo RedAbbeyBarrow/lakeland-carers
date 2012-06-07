@@ -1,0 +1,36 @@
+<?php echo $this->doctype(); ?>
+<html>
+<head>
+	<?php echo $this->headTitle(); ?>
+	<?php echo $this->headMeta(); ?>
+	<?php echo $this->headLink(); ?>
+	<?php echo $this->headScript(); ?>
+</head>
+
+<body>
+	<div id="global-wrapper">
+		<div id="wrapper">
+			<header>
+				<img src="<?php echo $this->baseUrl('/images/admin/h1.gif'); ?>" alt="redabbey" />
+			</header>
+			
+			
+			<aside class="nav">
+			<div class="green-header"><p>Admin Panel</p></div>
+				<?php 
+					echo $this->navigation()->menu();
+				?>
+			</aside>
+			<aside class="content">
+				<?php echo $this->layout()->content; ?>
+			</aside>
+		</div>
+		
+		<div class="clearer"></div>
+		
+		<!-- end wrapper home -->
+		<div id="footer" class="footerBlue">
+		</div>
+	</div>
+</body>
+</html>

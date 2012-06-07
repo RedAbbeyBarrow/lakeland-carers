@@ -1,0 +1,6 @@
+<?php ?>
+<h2>Update testimonial from <?php echo $this->testimonial['from_company']; ?></h2>
+<p class="breadcrumb">
+	You are here: <a href="<?php echo $this->url(array('module' => 'admin','controller'=>'testimonials','action'=>'index')) ?>">Testimonials</a> > Update Testimonial
+</p>
+<?php echo $this->testimonial_form; ?>

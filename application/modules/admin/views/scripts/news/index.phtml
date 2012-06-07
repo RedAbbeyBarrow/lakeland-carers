@@ -1,0 +1,40 @@
+<?php ?>
+<h2>News</h2>
+
+<p class="breadcrumb">
+	You are here: News
+</p>
+
+<table id="display-table" class="display" cellpadding="0" cellspacing="0" border="0">
+	<thead>
+		<tr>
+			<th>Title</th>
+			<th>Date Added</th>
+			<th>Last Updated</th>
+			<th>Action</th>
+		</tr>
+	</thead>
+	<tbody>
+	<?php foreach($this->news as $article) {?>
+		<tr>
+			<td><?php echo substr($article['title'], 0, 40); ?> ...</td>
+			<td><?php echo date('d-M-Y', strtotime($article['date_added'])); ?></td>
+			<td>
+				<?php 
+					$days = round((time() - strtotime($article['last_update']))/86400);
+					echo ($days > 1) ? $days." days ago" : "Today";
+				?>
+			</td>
+			<td>
+				<a href="<?php echo $this->url(array('module'=>'admin', 'controller'=>'news', 'action'=>'update', 'article'=>$article['id'])); ?>">Edit</a> | 
+				<a class="delete-confirm" href="<?php echo $this->url(array('module'=>'admin', 'controller'=>'news', 'action'=>'delete', 'article'=>$article['id'])); ?>">Delete</a>
+			</td>
+		</tr>
+			
+	<?php } ?>
+	</tbody>
+</table>
+
+<div id="confirm_delete">
+	<p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>This article will be permanently deleted and cannot be recovered. Are you sure?</p>
+</div>

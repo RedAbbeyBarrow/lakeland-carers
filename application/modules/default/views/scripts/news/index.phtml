@@ -1,0 +1,17 @@
+<?php ?>
+<h2>Latest News Articles</h2>
+<?php foreach ($this->paginator as $article) { ?>
+<table>
+	<tr>
+		<td><h5><?php echo $this->escape($article['title']); ?></h5></td>
+	</tr>
+	<tr>
+		<td><?php echo substr($this->escape(strip_tags($article['article_content'])), 0, 90); ?>...</td>
+	</tr>
+</table>
+<a class="link "href="<?php echo $this->url(array('module' => 'default','controller'=>'news','action'=>'view', 'article'=>$article['id'] )) ?>">Read More</a>
+<hr>
+<?php } ?>
+<?php echo $this->paginationControl($this->paginator, 'Sliding', 'partials/my_paginator.phtml'); ?>
+</br>
+

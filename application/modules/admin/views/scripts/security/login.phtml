@@ -1,0 +1,10 @@
+<?php ?>
+<h2>Login</h2>
+
+<?php
+	echo $this->form;
+	
+	if (isset($this->login_errormsg)) {
+		echo "<p>".$this->login_errormsg."</p>";
+	}
+?>

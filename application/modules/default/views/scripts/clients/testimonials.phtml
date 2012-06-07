@@ -1,0 +1,15 @@
+<?php ?>
+<h2>Testimonials</h2>
+<?php foreach ($this->paginator as $testimonial) { ?>
+<table>
+	<tr>
+		<td><?php echo $this->escape($testimonial['testimonial']); ?></td>
+	</tr>
+	<tr>
+		<td><cite><?php echo $this->escape($testimonial['testimonial_author']); ?></cite></td>
+	</tr>
+</table>
+<hr>
+<?php } ?>
+<?php echo $this->paginationControl($this->paginator, 'Sliding', 'partials/my_paginator.phtml'); ?>
+</br>

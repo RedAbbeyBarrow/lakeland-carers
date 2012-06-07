@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<nav>
+		<home>
+			<label>Home</label>
+			<module>default</module>
+			<controller>index</controller>
+			<action>index</action>
+			<resource>default:index</resource>
+			<privilege>index</privilege>
+			<id>default:index:index</id>
+		</home>
+		
+		<about>
+			<label>About Us</label>
+			<module>default</module>
+			<controller>about</controller>
+			<action>index</action>
+			<resource>default:about</resource>
+			<privilege>index</privilege>
+			<id>default:about:index</id>
+		</about>
+		
+		<team>
+			<label>Meet the Team</label>
+			<module>default</module>
+			<controller>about</controller>
+			<action>theteam</action>
+			<resource>default:about</resource>
+			<privilege>theteam</privilege>
+			<id>default:about:theteam</id>
+		</team>
+		
+		<clients>
+			<label>Clients</label>
+			<module>default</module>
+			<controller>clients</controller>
+			<action>index</action>
+			<resource>default:clients</resource>
+			<privilege>index</privilege>
+			<id>default:clients:index</id>
+			<pages>
+				<testimonials>
+					<label>Testimonials</label>
+					<module>default</module>
+					<controller>clients</controller>
+					<action>testimonials</action>
+					<resource>default:clients</resource>
+					<privilege>testimonials</privilege>
+					<id>default:clients:testimonials</id>
+				</testimonials>
+			</pages>
+		</clients>
+		
+		<services>
+			<label>Services</label>
+			<module>default</module>
+			<controller>services</controller>
+			<action>index</action>
+			<resource>default:services</resource>
+			<privilege>index</privilege>
+			<id>default:services:index</id>
+			<pages>
+				<homecare>
+					<label>Home Care</label>
+					<module>default</module>
+					<controller>services</controller>
+					<action>homecare</action>
+					<resource>default:services</resource>
+					<privilege>homecare</privilege>
+					<id>default:services:homecare</id>
+				</homecare>
+				<physicaldisabilities>
+					<label>Physical Disabilites</label>
+					<module>default</module>
+					<controller>services</controller>
+					<action>physicaldisabilities</action>
+					<resource>default:services</resource>
+					<privilege>physicaldisabilities</privilege>
+					<id>default:services:physicaldisabilities</id>
+				</physicaldisabilities>
+				<liveincare>
+					<label>Live in Care</label>
+					<module>default</module>
+					<controller>services</controller>
+					<action>liveincare</action>
+					<resource>default:services</resource>
+					<privilege>liveincare</privilege>
+					<id>default:services:liveincare</id>
+				</liveincare>
+				<dementiacare>
+					<label>Dementia Care</label>
+					<module>default</module>
+					<controller>services</controller>
+					<action>dementiacare</action>
+					<resource>default:services</resource>
+					<privilege>dementiacare</privilege>
+					<id>default:services:dementiacare</id>
+				</dementiacare>
+				<endoflife>
+					<label>End of Life</label>
+					<module>default</module>
+					<controller>services</controller>
+					<action>endoflife</action>
+					<resource>default:services</resource>
+					<privilege>endoflife</privilege>
+					<id>default:services:endoflife</id>
+				</endoflife>
+				<learningdifficulties>
+					<label>Learning Difficulties</label>
+					<module>default</module>
+					<controller>services</controller>
+					<action>learningdifficulties</action>
+					<resource>default:services</resource>
+					<privilege>learningdifficulties</privilege>
+					<id>default:services:learningdifficulties</id>
+				</learningdifficulties>
+			</pages>
+		</services>
+		
+		<faq>
+			<label>FAQs</label>
+			<module>default</module>
+			<controller>faq</controller>
+			<action>index</action>
+			<resource>default:faq</resource>
+			<privilege>index</privilege>
+			<id>default:faq:index</id>
+		</faq>
+		
+		<news>
+			<label>Latest News</label>
+			<module>default</module>
+			<controller>news</controller>
+			<action>index</action>
+			<resource>default:news</resource>
+			<privilege>index</privilege>
+			<id>default:news:index</id>
+			<pages>
+				<view>
+					<label>View Article</label>
+					<module>default</module>
+					<controller>news</controller>
+					<action>view</action>
+					<resource>default:news</resource>
+					<privilege>view</privilege>
+					<id>default:news:view</id>
+					<visible>0</visible>
+				</view>
+			</pages>
+		</news>
+		
+		<careers>
+			<label>Careers</label>
+			<module>default</module>
+			<controller>faq</controller>
+			<action>careers</action>
+			<resource>default:faq</resource>
+			<privilege>careers</privilege>
+			<id>default:faq:careers</id>
+		</careers>
+		
+		<contact>
+			<label>Contact Us</label>
+			<module>default</module>
+			<controller>contact</controller>
+			<action>index</action>
+			<resource>default:contact</resource>
+			<privilege>index</privilege>
+			<id>default:contact:index</id>
+		</contact>
+	</nav>	
+	
+</config>

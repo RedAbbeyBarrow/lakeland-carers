@@ -1,0 +1,44 @@
+<?php ?>
+<h2>Pages</h2>
+<p class="breadcrumb">
+	You are here: Pages
+</p>
+<table id="display-table" class="display" cellpadding="0" cellspacing="0" border="0">
+	<thead>
+		<tr>
+			<th>Page Name</th>
+			<th>Update SEO</th>
+			<th>Update Content</th>
+			<th>Last Updated</th>
+		</tr>
+	</thead>
+	<tbody>
+	<?php foreach($this->pages as $page) {?>
+	<?php
+		$url_peices = explode(":", $page['identifier']);
+		$module = $url_peices[0];
+		$controller = $url_peices[1];
+		$action = $url_peices[2];
+	?>
+		<tr>
+			<td><?php echo $page['page_name']; ?></td>
+			<td><a href="<?php echo $this->url(array('module'=>'admin', 'controller'=>'pages', 'action'=>'updateseo', 'page_id'=>$page['id'])); ?>">Update</a></td>
+			<td>
+				<?php
+					if ($page['editable_content']) {
+						echo "<a href=" . $this->url(array('module'=>'admin', 'controller'=>'pages', 'action'=>'updatecontent', 'page_id'=>$page['id'])) . ">Update</a>";
+					} else {
+						echo "Not Editable";
+					}
+				?>
+			<td>
+				<?php 
+					$days = round((time() - strtotime($page['last_update']))/86400);
+					echo ($days > 1) ? $days." days ago" : "Today";
+				?>
+			</td>
+		</tr>
+			
+	<?php } ?>
+	</tbody>
+</table>

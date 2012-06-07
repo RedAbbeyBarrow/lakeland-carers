@@ -1,0 +1,92 @@
+<?php echo $this->doctype(); ?>
+<html>
+<head>
+	<?php echo $this->headTitle(); ?>
+	<?php echo $this->headMeta(); ?>
+	<?php echo $this->headLink(); ?>
+	<?php echo $this->headScript(); ?>
+</head>
+
+<body>
+
+	<header>
+		<div class="logo">Lakeland Carers</div>           
+		<?php 
+			echo $this->navigation()->menu()->setMaxDepth(1);
+		?>
+		<p class="tel">For specialist care in your home across Furness, South Lakes and Cumbria call our Ulverston Office on <span>01229 585693</span></p>
+	</header>
+
+	<figure>
+		<div id="slider" class="nivoSlider">
+			<img src="<?php echo $this->baseUrl('images/slide1.jpg'); ?>" alt="" title="#slide1caption"/>
+			<img src="<?php echo $this->baseUrl('images/slide2.jpg'); ?>" alt="" title="#slide2caption"/>
+			<img src="<?php echo $this->baseUrl('images/slide3.jpg'); ?>" alt="" title="#slide3caption"/>
+			<img src="<?php echo $this->baseUrl('images/slide4.jpg'); ?>" alt="" title="#slide4caption"/>
+		</div>
+		<div id="slide1caption" class="nivo-html-caption">
+			<p>I placed my faith in your company and this was validated by the excellent service provided…</p>
+		</div>   
+		<div id="slide2caption" class="nivo-html-caption">
+			<p>Your professional, caring and supportive service, one which we feel privileged to have received</p>
+		</div> 
+		<div id="slide3caption" class="nivo-html-caption">
+			<p>Your happiness ..... our priority</p>
+		</div>
+		<div id="slide4caption" class="nivo-html-caption">
+			<p>Independence, choice and control ..it matters , because YOU matter</p>
+		</div>
+    </figure>
+
+	<section id="mainSection" class="cf">
+    	<article>
+    		<div id="breadcrumb">
+				You are here: <?php 
+					echo $this->navigation()->breadcrumbs()->setMinDepth(0)->setRenderInvisible(true);
+				?>
+			</div>
+			<?php echo $this->layout()->content; ?>
+      	</article>
+        
+        <aside>
+  			<div id="testamony">
+				<h3>What our clients say...</h3>
+				<blockquote class="drop-shadow lifted rotated">
+					<?php $this->Testimonial()->getRandom(); ?>
+					<p><?php echo $this->Testimonial()->getTestimonial(); ?></p>
+					<cite><?php echo $this->Testimonial()->getTestimonialAuthor(); ?></cite>
+					<p><a href="<?php echo $this->url(array('module' => 'default','controller'=>'clients','action'=>'testimonials')) ?>">Read more >></a></p>
+				</blockquote>
+            	<div id="paperclip"></div>
+            </div>
+
+  			<h3>Latest News</h3>
+			<article class="drop-shadow lifted">	
+				<?php $this->News()->getRandom(); ?>
+				<p><?php echo $this->News()->getArticleTitle(); ?></p>
+				<p><img src="<?php echo $this->baseUrl($this->News()->getArticleThumbnail()); ?>" alt=""></p>
+            	<p>
+            		<a href="<?php echo $this->url(array('module' => 'default','controller'=>'news','action'=>'view', 'article'=>$this->News()->getArticleID() )) ?>">Read More</a>
+				</p>
+			</article> 
+            
+            <h3>A Career with Lakeland Care</h3>
+            <article class="drop-shadow lifted">
+            	<p>If you are passionate about making a difference to the lives of vulnerable people in the community, then come and talk to us!</p>
+            	<p>
+            		<a href="<?php echo $this->url(array('module' => 'default','controller'=>'faq','action'=>'careers')) ?>">More information &gt;&gt;</a>
+				</p>
+            </article>
+		</aside><!-- end aside -->
+    
+		<footer>
+			<ul id="copy">
+				<li>&copy; copyright Lakeland Care &amp; Support Services Limited</li>
+				<li><a href="http://www.redabbey.co.uk" target="_blank">Website designed by Red Abbey</a></li>            
+				<li><a href="http://www.ph-photo.co.uk" target="_blank">Photography by Philip Hatfield</a></li>    
+			</ul>
+		</footer>
+	</section>
+
+</body>
+</html>

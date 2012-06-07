@@ -1,0 +1,5 @@
+<?php ?>
+<h2><?php echo $this->article['title']; ?></h2>
+<p><img src="<?php echo $this->baseUrl($this->article['article_image_url']); ?>" alt=""></p>
+<p><?php echo $this->article['article_content']; ?></p>
+<p><a href="<?php echo $this->url(array('module' => 'default','controller'=>'news','action'=>'index' ), null, true, false) ?>">Go Back</a></p>

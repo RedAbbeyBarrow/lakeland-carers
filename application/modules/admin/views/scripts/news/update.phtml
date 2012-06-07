@@ -1,0 +1,6 @@
+<?php ?>
+<h2>Update article "<?php echo $this->article['title']; ?>"</h2>
+<p class="breadcrumb">
+	You are here: <a href="<?php echo $this->url(array('module' => 'admin','controller'=>'news','action'=>'index')) ?>">News</a> > Update Article
+</p>
+<?php echo $this->news_form; ?>

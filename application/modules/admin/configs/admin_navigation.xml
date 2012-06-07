@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<nav>
+		<home>
+			<label>Home</label>
+			<module>admin</module>
+			<controller>index</controller>
+			<action>index</action>
+			<resource>admin:index</resource>
+			<privilege>index</privilege>
+			<id>admin:index:index</id>
+		</home>
+		
+		<thepages>
+			<label>Pages</label>
+			<module>admin</module>
+			<controller>pages</controller>
+			<action>index</action>
+			<resource>admin:pages</resource>
+			<privilege>index</privilege>
+			<id>admin:pages:index</id>
+			<pages>
+				<update>
+					<label>Update Page</label>
+					<module>admin</module>
+					<controller>pages</controller>
+					<action>update</action>
+					<resource>admin:pages</resource>
+					<privilege>update</privilege>
+					<id>admin:pages:update</id>
+					<visible>0</visible>
+				</update>
+			</pages>
+		</thepages>
+		
+		<testimonials>
+			<label>Testimonials</label>
+			<module>admin</module>
+			<controller>testimonials</controller>
+			<action>index</action>
+			<resource>admin:testimonials</resource>
+			<privilege>index</privilege>
+			<id>admin:testimonials:index</id>
+			<pages>
+				<add>
+					<label>Add New Testimonial</label>
+					<module>admin</module>
+					<controller>testimonials</controller>
+					<action>add</action>
+					<resource>admin:testimonials</resource>
+					<privilege>add</privilege>
+					<id>admin:testimonials:add</id>
+				</add>
+				<update>
+					<label>Update Testimonial</label>
+					<module>admin</module>
+					<controller>testimonials</controller>
+					<action>update</action>
+					<resource>admin:testimonials</resource>
+					<privilege>update</privilege>
+					<id>admin:testimonials:update</id>
+					<visible>0</visible>
+				</update>
+				<delete>
+					<label>Delete Testimonial</label>
+					<module>admin</module>
+					<controller>testimonials</controller>
+					<action>delete</action>
+					<resource>admin:testimonials</resource>
+					<privilege>delete</privilege>
+					<id>admin:testimonials:delete</id>
+					<visible>0</visible>
+				</delete>
+			</pages>
+		</testimonials>
+		
+		<news>
+			<label>Latest News</label>
+			<module>admin</module>
+			<controller>news</controller>
+			<action>index</action>
+			<resource>admin:news</resource>
+			<privilege>index</privilege>
+			<id>admin:news:index</id>
+			<pages>
+				<add>
+					<label>Add News Article</label>
+					<module>admin</module>
+					<controller>news</controller>
+					<action>add</action>
+					<resource>admin:news</resource>
+					<privilege>add</privilege>
+					<id>admin:news:add</id>
+				</add>
+				<update>
+					<label>Update News Article</label>
+					<module>admin</module>
+					<controller>news</controller>
+					<action>update</action>
+					<resource>admin:news</resource>
+					<privilege>update</privilege>
+					<id>admin:news:update</id>
+					<visible>0</visible>
+				</update>
+				<delete>
+					<label>Delete News Article</label>
+					<module>admin</module>
+					<controller>news</controller>
+					<action>delete</action>
+					<resource>admin:news</resource>
+					<privilege>delete</privilege>
+					<id>admin:news:delete</id>
+					<visible>0</visible>
+				</delete>
+			</pages>
+		</news>
+		
+		<logout>
+			<label>Logout</label>
+			<module>admin</module>
+			<controller>security</controller>
+			<action>logout</action>
+			<resource>admin:security</resource>
+			<privilege>logout</privilege>
+			<id>admin:security:logout</id>
+		</logout>
+	</nav>		
+</config>
