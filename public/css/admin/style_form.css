@@ -1,0 +1,98 @@
+input, textarea {
+    -moz-transition: background 0.2s linear 0s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) inset, 0 1px 0 rgba(255, 255, 255, 0.075);
+}
+input, textarea, select {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    display: inline-block;
+    margin: 0;
+    outline: medium none;
+    padding: 4px;
+    
+}
+
+dl.zend_form dt, dd { 
+	min-height: 25px; 	
+} 
+
+dl.zend_form dt {
+	float: left;
+	clear: left;
+	text-align: left;
+	padding-top:20px;
+	min-width:122px;
+	margin:0px 0px 0px 0px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#757a7a;
+}
+
+dl.zend_form dt.error {
+    margin-top:-10px;
+    width:100%;
+	color: red;
+    font-style: italic;
+    font-weight: bold;
+    font-size:10pt;
+	text-align:left;
+}
+
+dl.zend_form dt label.required { 
+	
+}
+
+dl.zend_form dt label.error { 
+	color:red;
+}
+
+dl.zend_form dd {
+	float: left;
+	clear: right;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+dl.zend_form dd input[type="text"], 
+dl.zend_form dd input[type="password"], 
+dl.zend_form dd input[type="file"]{
+	width:200px;
+	height:35px;
+	padding:0 10px;
+	float:left;
+	font-size:13px;
+	color:#757a7a;
+	line-height:18px;
+	border:1px solid #e5e5e5;
+}
+dl.zend_form dd input.article-title[type="text"] {
+	width:440px;
+}
+
+
+dl.zend_form dd textarea{
+	width:420px;
+	height:150px;
+	padding:10px 10px;
+	float:left;
+	font-size:13px;
+	color:#757a7a;
+	line-height:18px;
+	border:1px solid #e5e5e5;
+	resize: none;
+}
+
+dl.zend_form dd ul.errors {
+	list-style: none;
+	padding-left: 2px;
+	margin: 0;
+	clear:both;
+	width:250px;
+	text-align:left;
+}
+
+dl.zend_form dd ul.errors li {
+	line-height: 20px;
+	font-size:14px; 
+	color: red;
+}

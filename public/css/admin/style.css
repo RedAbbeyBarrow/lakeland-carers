@@ -1,0 +1,203 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+html,body{
+	margin:0;
+	padding:0;	
+}
+body{
+	background-position: left top;
+	background:url(../../images/admin/body_bg_blue.jpg) repeat-x;
+	background-color: #00CCFF;
+	font: 76% arial,sans-serif;
+	text-align:left; 
+	color:#000
+}
+p{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#757a7a; 
+	line-height:18px;
+	text-align:left;
+	float: left;
+	width:100%;
+	margin-bottom:20px;
+}
+a{
+	padding:0px; 
+	text-decoration:none; 
+	color:#0084b4;
+	font-weight:normal;
+	cursor:pointer;
+	cursor:hand
+}
+a:hover{
+	text-decoration:underline; 
+}
+h1, h2, h3, h4, h5, h6 {color:#757a7a; top:0px; bottom:0px; left:0px; margin:0px; margin-bottom:5px; clear:both;}
+h5              { font-size: .83em; margin: 1.5em 0 }
+h6              { font-size: .75em; margin: 1.67em 0 }
+h1, h2, h3, h4,
+h5, h6, b,
+strong          { font-weight: bolder }
+
+h2 {font-size:1.5em; color:#98CB00; padding-bottom:5px; margin-top:21px; margin-bottom:10px; border-bottom:dotted #00CCFF thin; width:100%; float:left; clear:both;}
+
+
+#global-wrapper {
+	width: 920px;
+	margin: 40px auto 0 auto;
+} 
+
+#wrapper {
+	width:100%;
+	background-color: #FFFFFF;
+    min-height:600px;
+    height:auto !important;
+	padding:20px;
+	float:left;
+}
+
+#wrapper header {
+	margin-bottom:20px;
+}
+
+#wrapper aside.nav {
+	float:left;
+	position:relative;
+	width:300px;
+}
+#wrapper aside.nav .green-header {
+	float:left;
+	margin-top:0px;
+	margin-left:-27px;
+	width:294px;
+	height:70px;
+	background-position:top left;
+	line-height:70px;
+	background-repeat:no-repeat;
+	color:#FFFFFF;
+	padding-left:20px;
+	font-size:1.5em;
+	background:url(../../images/admin/status_green.png);
+}
+#wrapper aside.nav .green-header p {
+	color:#fff;
+	margin-top:25px;
+	margin-left:27px;
+}
+#wrapper aside.nav ul {
+	padding-left:20px;
+}
+#wrapper aside.nav ul li {
+	padding:5px 0 5px 0;
+}
+#wrapper aside.nav ul li a:hover {
+	text-decoration:underline;
+}
+#wrapper aside.nav ul li ul li {
+	padding:5px 0 5px 0;
+	margin-left:15px;
+}
+#wrapper aside.nav ul li ul li a:hover {
+	text-decoration:underline;
+}
+#wrapper aside.content {
+	float:left;
+	position:relative;
+	width:600px;
+	margin-left:10px;
+	margin-top:8px;
+}
+
+#wrapper aside .content p.breadcrumb {
+	float:left;
+	position:relative;
+	padding-bottom:10px;
+}
+
+#footer {
+	width: 920px;
+	min-height:70px;
+	height:auto !important;
+	height:70px;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	background-image: url(/images/admin/footer_bg_blue.jpg);
+	float:left;
+}
+#footer p {
+	float: right;
+	color: #FFFFFF;
+	margin-top: 10px;
+}
+#footer a {
+	color: #FFFFFF!important;
+	text-decoration:underline;
+}
+
+#display-table {
+	border: 1px solid #DFDFDF;
+	background-color: #F9F9F9;
+	width: 100%;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	font-family: Arial,"Bitstream Vera Sans",Helvetica,Verdana,sans-serif;
+	color: #333;
+}
+#display-table td, #display-table th {
+	border-top-color: white;
+	border-bottom: 1px solid #DFDFDF;
+	color: #555;
+}
+#display-table th {
+	text-shadow: rgba(255, 255, 255, 0.796875) 0px 1px 0px;
+	font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+	font-weight: normal;
+	padding: 7px 7px 8px;
+	text-align: left;
+	line-height: 1.3em;
+	font-size: 14px;
+}
+#display-table td {
+	font-size: 12px;
+	padding: 4px 7px 2px;
+	vertical-align: top;
+}

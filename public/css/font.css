@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Vag';
+    src: url('../font/vag.eot');
+    src: url('../font/vag.eot?#iefix') format('embedded-opentype'),
+         url('../font/vag.woff') format('woff'),
+         url('../font/vag.ttf') format('truetype'),
+         url('../font/vag.svg#Vag') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
